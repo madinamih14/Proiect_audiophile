@@ -1,0 +1,61 @@
+@import 'base';
+@import 'colors';
+@import 'spacings';
+@import 'typography';
+
+button{
+    cursor:pointer;
+    width:160px;
+    height:48px;
+    border:none;
+    
+}
+
+.button1{
+    background-color:$orange;
+    border:none;
+    // width:160px;
+    // height:48px;
+    color:$white;
+    
+}
+
+.button3{
+    width: 57.32px;
+    height: 18px;
+    border:none;
+    color:$black;
+    background:none;
+    // display: inline-block;
+    // position: absolute;
+    background-image: url('../assets/shared/desktop/icon-arrow-right.svg');
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size:8px 10px;
+    // text-align: center;
+    p{
+        opacity: 0.5;
+        // width: 57.32px;
+        margin-right: 13.32px;
+        height: 18px;
+        font-weight: 700;
+        line-height: 17.76px;
+    }
+}
+
+.button2hover{
+    background-color:$black;
+    // border:none;
+    // width:160px;
+    // height:48px;
+    color:$white;
+    // cursor: pointer;
+    // line-height: 17.76px;
+
+}
+
+.button2default{
+    background:none;
+    border:1px solid $black;
+    // line-height: 17.76px;
+}

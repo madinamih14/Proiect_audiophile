@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 1440px;
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0;
+  padding: 0 165px;
+  max-width: 1440px;
+  height: 729px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24.6px;
+  letter-spacing: 1.29px;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+}
+
+.overline {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.subtitle {
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+header li {
+  font-size: 13px;
+  font-weight: 700px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 1440px;
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0;
+  padding: 0 165px;
+  max-width: 1440px;
+  height: 729px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24.6px;
+  letter-spacing: 1.29px;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+}
+
+.overline {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.subtitle {
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+header li {
+  font-size: 13px;
+  font-weight: 700px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+  width: 160px;
+  height: 48px;
+  border: none;
+}
+
+.button1 {
+  background-color: #D87D4A;
+  border: none;
+  color: #FFFFFF;
+}
+
+.button3 {
+  width: 57.32px;
+  height: 18px;
+  border: none;
+  color: #000000;
+  background: none;
+  background-image: url("../assets/shared/desktop/icon-arrow-right.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 8px 10px;
+}
+.button3 p {
+  opacity: 0.5;
+  margin-right: 13.32px;
+  height: 18px;
+  font-weight: 700;
+  line-height: 17.76px;
+}
+
+.button2hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.button2default {
+  background: none;
+  border: 1px solid #000000;
+}
+
+body {
+  color: #FFFFFF;
+}
+
+header {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 36px;
+  padding-top: 32px;
+}
+header ul {
+  margin: 0;
+  width: 430px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  display: inline;
+  margin: 0;
+}
+header ul li:not(:last-of-type) {
+  padding-right: 34px;
+}
+header .headerbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90px;
+  height: 25px;
+}
+header button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+header button:first-of-type {
+  width: 21px;
+  height: 20px;
+}
+header button:nth-of-type(2) {
+  width: 23px;
+  margin-right: 2.8px;
+}
+header button:nth-of-type(3) {
+  width: 20px;
+}
+
+.hero {
+  background-image: url("../assets/home/desktop/image-hero.jpg");
+  background-position: center;
+  border-radius: 8px;
+  width: 1440px;
+  height: 729px;
+}
+
+.newproduct {
+  width: 398px;
+  height: 346px;
+  position: absolute;
+  top: 225px;
+  left: 165px;
+  color: #FFFFFF;
+}
+.newproduct p.overline {
+  position: absolute;
+  top: 0;
+}
+.newproduct p.experience {
+  opacity: 0.75;
+  margin: 0;
+  position: absolute;
+  top: 183px;
+  right: 49px;
+}
+.newproduct h1 {
+  position: absolute;
+  color: #FFFFFF;
+  margin: 0;
+  top: 43px;
+  right: 0.5%;
+  left: 0%;
+}
+.newproduct button {
+  position: absolute;
+  bottom: 0;
+}
+
+.part1 {
+  height: 572px;
+}
+.part1 .box {
+  width: 350px;
+  height: 284px;
+  position: absolute;
+  top: 849px;
+}
+.part1 .box h6 {
+  position: absolute;
+  bottom: 63px;
+  left: 108.5px;
+  z-index: 1;
+  color: #000000;
+}
+.part1 .box img {
+  width: 210px;
+  height: 200px;
+  position: absolute;
+  left: 70px;
+  top: 24px;
+  z-index: 1;
+}
+.part1 .box button {
+  position: absolute;
+  z-index: 1;
+  left: 146px;
+  bottom: 30px;
+}
+.part1 .box .graybox {
+  background-color: #F1F1F1;
+  width: 350px;
+  height: 204px;
+  position: absolute;
+  top: 80px;
+  border-radius: 8px;
+}
+.part1 .box2 {
+  left: 545px;
+}
+.part1 .box2 h6 {
+  left: 124.5px;
+}
+.part1 .box3 {
+  left: 925px;
+}
+.part1 .box3 img {
+  width: 210px;
+  height: 190px;
+}
+.part1 .box3 h6 {
+  left: 116px;
+}
+
+.part2 {
+  height: 1516px;
+}
+.part2 .speakerZX9 {
+  background-color: #D87D4A;
+  width: 1110px;
+  height: 560px;
+  border-radius: 8px;
+  position: absolute;
+  overflow: hidden;
+}
+.part2 .speakerZX9 img {
+  position: absolute;
+}
+.part2 .speakerZX9 img:first-of-type {
+  width: 380px;
+  height: 463px;
+  top: 110px;
+  left: 143.49px;
+  z-index: 1;
+}
+.part2 .speakerZX9 .speakertext {
+  width: 349px;
+  height: 303px;
+  position: absolute;
+  top: 133px;
+  right: 95px;
+  z-index: 1;
+}
+.part2 .speakerZX9 .speakertext p {
+  width: 349px;
+  position: absolute;
+  bottom: 88px;
+  opacity: 0.75;
+  font-weight: 400;
+}
+.part2 .speakerZX9 .speakertext button {
+  position: absolute;
+  bottom: 0;
+}
+
+.divcircles {
+  width: 1259px;
+  height: 596px;
+  position: absolute;
+  left: 16px;
+  top: 1265px;
+  background-image: url(../assets/home/desktop/pattern-circles.svg);
+  background-repeat: no-repeat;
+}
+
+.speakerZX7 {
+  position: absolute;
+  top: 1909px;
+  height: 320px;
+}
+.speakerZX7 .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 10%;
+}
+.speakerZX7 img {
+  border-radius: 8px;
+}
+.speakerZX7 h4 {
+  position: absolute;
+  color: #000000;
+  top: 101px;
+  left: 95px;
+}
+.speakerZX7 button {
+  position: absolute;
+  bottom: 101px;
+  left: 96.5px;
+}
+
+.earphonesYX1 {
+  position: absolute;
+  top: 2277px;
+  width: 1110px;
+}
+.earphonesYX1 img {
+  border-radius: 8px;
+}
+.earphonesYX1 div {
+  background-color: #F1F1F1;
+  width: 540px;
+  height: 320px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 8px;
+}
+.earphonesYX1 div h4 {
+  color: #000000;
+  position: absolute;
+  top: 101px;
+  left: 95px;
+}
+.earphonesYX1 button {
+  position: absolute;
+  left: 96.5px;
+  bottom: 101px;
+}
+
+.part3 .about {
+  width: 1110px;
+  height: 588px;
+  position: absolute;
+  top: 2797px;
+}
+.part3 .about img {
+  position: absolute;
+  right: 0;
+}
+.part3 .about .text {
+  width: 445px;
+  height: 295px;
+  position: absolute;
+  left: 0;
+  top: 147px;
+}
+.part3 .about .text h2 {
+  color: #000000;
+}
+.part3 .about .text p {
+  position: absolute;
+  bottom: 0;
+  opacity: 50%;
+  color: #000000;
+}
+
+.span {
+  color: #D87D4A;
+}
+
+.footer {
+  height: 365px;
+  background-color: #101010;
+}
+.footer footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer footer nav ul {
+  list-style: none;
+  display: flex;
+}
+.footer footer nav ul li {
+  display: inline;
+}/*# sourceMappingURL=main.css.map */

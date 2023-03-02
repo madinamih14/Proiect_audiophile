@@ -1,0 +1,27 @@
+@import 'spacings';
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    margin:0 auto;
+    width: 1440px;
+    position: relative;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    margin:0;
+    padding: 0 $container-spaicing;
+    max-width:1440px;
+    height:729px;
+    // display: flex;
+    // justify-content: center;
+
+}
