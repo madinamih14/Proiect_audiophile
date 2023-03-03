@@ -21,7 +21,7 @@ img {
   margin: 0;
   padding: 0 165px;
   max-width: 1440px;
-  height: 729px;
+  height: 100%;
 }
 
 body {
@@ -97,9 +97,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-header li {
+header li, footer li {
+  cursor: pointer;
   font-size: 13px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #FFFFFF;
   letter-spacing: 2px;
   line-height: 25px;
@@ -127,7 +128,7 @@ img {
   margin: 0;
   padding: 0 165px;
   max-width: 1440px;
-  height: 729px;
+  height: 100%;
 }
 
 body {
@@ -203,9 +204,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-header li {
+header li, footer li {
+  cursor: pointer;
   font-size: 13px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #FFFFFF;
   letter-spacing: 2px;
   line-height: 25px;
@@ -279,7 +281,7 @@ header ul li {
   margin: 0;
 }
 header ul li:not(:last-of-type) {
-  padding-right: 34px;
+  margin-right: 34px;
 }
 header .headerbuttons {
   display: flex;
@@ -402,7 +404,7 @@ header button:nth-of-type(3) {
 }
 
 .part2 {
-  height: 1516px;
+  height: 1496px;
 }
 .part2 .speakerZX9 {
   background-color: #D87D4A;
@@ -508,6 +510,9 @@ header button:nth-of-type(3) {
   bottom: 101px;
 }
 
+.part3 {
+  height: 788px;
+}
 .part3 .about {
   width: 1110px;
   height: 588px;
@@ -517,6 +522,7 @@ header button:nth-of-type(3) {
 .part3 .about img {
   position: absolute;
   right: 0;
+  border-radius: 8px;
 }
 .part3 .about .text {
   width: 445px;
@@ -540,13 +546,21 @@ header button:nth-of-type(3) {
 }
 
 .footer {
+  width: 100%;
   height: 365px;
   background-color: #101010;
+  position: absolute;
+}
+.footer .orangeline {
+  width: 101px;
+  height: 4px;
+  background-color: #D87D4A;
 }
 .footer footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 71px;
 }
 .footer footer nav ul {
   list-style: none;
@@ -554,4 +568,35 @@ header button:nth-of-type(3) {
 }
 .footer footer nav ul li {
   display: inline;
+}
+.footer footer nav ul li:not(:last-of-type) {
+  margin-right: 34px;
+}
+.footer .footertext {
+  width: 540px;
+  height: 181px;
+  position: absolute;
+  top: 136px;
+}
+.footer .footertext p {
+  opacity: 50%;
+  color: #FFFFFF;
+}
+.footer .footertext p:nth-of-type(2) {
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+}
+.footer .footerbuttons {
+  display: flex;
+  position: absolute;
+  bottom: 136px;
+  right: 165px;
+}
+.footer .footerbuttons button {
+  width: 24px;
+  background: none;
+}
+.footer .footerbuttons button:not(:last-of-type) {
+  margin-right: 16px;
 }/*# sourceMappingURL=main.css.map */

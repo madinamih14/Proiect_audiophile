@@ -5,7 +5,6 @@
 @import 'buttons';
 
 body{
-    // background-color: rgb(189, 132, 132);
     color: $white;
 }
 
@@ -28,7 +27,7 @@ header{
             display: inline;
             margin:0;
             &:not(:last-of-type){
-                padding-right: 34px;
+                margin-right: 34px;
             }
         }
     }
@@ -36,7 +35,6 @@ header{
         display:flex;
         align-items: center;
         justify-content: space-around;
-        // background-color: red;
         width: 90px;
         height: 25px;
         
@@ -64,15 +62,12 @@ header{
 .hero {
     background-image: url('../assets/home/desktop/image-hero.jpg');
     background-position: center;
-    // background-size:cover;
     border-radius: 8px;
     width: 1440px;
-    height: 729px;
-    // height: 100%;   
+    height: 729px;   
 }
 
 .newproduct{
-    // background-color: rgb(199, 121, 121);
     width: 398px;
     height: 346px;
     position: absolute;
@@ -82,9 +77,7 @@ header{
     p{
         &.overline{
             position: absolute;
-            // bottom:327px;
             top:0;
-        
         }
         &.experience{
             opacity: 0.75;
@@ -113,7 +106,6 @@ header{
     .box{
         width: 350px;
         height: 284px;
-        // background-color: pink;
         position: absolute;
         top:849px;
         h6{
@@ -139,7 +131,6 @@ header{
         }
         .graybox{
             background-color: $gray;
-            // border:black 1px solid;
             width:350px;
             height:204px;
             position: absolute;
@@ -167,16 +158,9 @@ header{
 
 
 .part2{
-    height: 1516px;
+    height: 1496px;
     .speakerZX9{
         background-color: $orange;
-        // background-image:url(../assets/home/desktop/pattern-circles.svg);
-        // background-repeat: no-repeat;
-        // background-position: -80% 10%;
-        // background-size: contain;
-        // background-position: 10% 10%;
-
-        // border: 60px solid magenta;
         width: 1110px;
         height: 560px;
         border-radius: 8px;
@@ -185,19 +169,12 @@ header{
         img{
             position: absolute;
             &:first-of-type{
-                // width: 410px;
-                // height: 493px;
                 width:380px;
                 height: 463px;
                 top:110px;
                 left:143.49px;
                 z-index: 1;
             }
-            // &:nth-of-type(2){
-            //     right:315px;
-            //     top:-32px;
-                
-            // }
         }
         .speakertext{
             width: 349px;
@@ -291,20 +268,20 @@ header{
 }
 
 .part3{
+    height: 788px;
     .about{
         width: 1110px;
         height:588px;
-        // background-color: pink;
         position:absolute;
         top: 2797px;
         img{
             position:absolute;
             right: 0;
+            border-radius: 8px;
 
 
         }
         .text{
-            // background-color: red;
             width:445px;
             height: 295px;
             position: absolute;
@@ -327,22 +304,69 @@ header{
     color:$orange;
 }
 .footer{
+    width:100%;
     height: 365px;
     background-color: $warmblack;
+    position: absolute;
+    .orangeline{
+        width:101px;
+        height: 4px;
+        background-color:$orange;
+    }
     footer{
         display: flex;
         justify-content:space-between;
         align-items: center;
+        padding-top:71px;
+        // background-color: rgb(6, 116, 80);
+        // position: relative;
+        // top:75px;
+
         nav{
+            // position: absolute;
+            // top:75px;
             ul{
                 list-style: none;
                 display: flex;
                 li{
                     display: inline;
+                    &:not(:last-of-type){
+                        margin-right:34px;
+                    }
                 }
             }
             
         }
+    }
+    .footertext{
+        width:540px;
+        height: 181px;
+        position: absolute;
+        top:136px;
+        p{
+            opacity: 50%;
+            color:$white;
+            &:nth-of-type(2){
+                font-weight:700;
+                position: absolute;
+                bottom:0;
+            }
+        }
+    }
+    .footerbuttons{
+        display: flex;
+        position: absolute;
+        bottom:136px;
+        right: 165px;
 
+        button{
+            width: 24px;
+            // height: 24px;
+            background:none;
+            &:not(:last-of-type){
+                margin-right:16px;
+            }
+        }
+        
     }
 }

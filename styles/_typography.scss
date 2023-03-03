@@ -79,10 +79,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-header{
+header, footer{
     li{
+        cursor:pointer;
         font-size:13px;
-        font-weight: 700px;
+        font-weight: 700;
         color:$white;
         letter-spacing: 2px;
         line-height: 25px;
