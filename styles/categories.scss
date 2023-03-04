@@ -1,0 +1,71 @@
+@import 'base';
+@import 'colors';
+@import 'spacings';
+@import 'typography';
+@import 'buttons';
+
+header{
+    width:1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid $borderwithopacity;
+    position: relative;
+    padding-bottom: 36px;
+    padding-top: 32px;
+    ul{
+        margin:0;
+        width: 430px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        li{
+            display: inline;
+            margin:0;
+            &:not(:last-of-type){
+                margin-right: 34px;
+            }
+        }
+    }
+    .headerbuttons{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90px;
+        height: 25px;
+        
+    }
+    button{
+        background:none;
+        border:none;
+        padding:0;
+        cursor:pointer;
+        &:first-of-type{
+            width:21px;
+            height:20px;
+        }
+        &:nth-of-type(2){
+            width:23px;
+            margin-right: 2.8px;
+        }
+        &:nth-of-type(3){
+            width:20px;
+        }
+    }
+}
+
+
+.headerpart {
+    background-color:$black;
+    background-position: center;
+    width: 1440px;
+    height: 336px;   
+    h2{
+       position: absolute;
+    //    background-color: red;
+       bottom:97px;
+       right:578px;
+       width: 283px;
+       height: 44px;
+    }
+}
