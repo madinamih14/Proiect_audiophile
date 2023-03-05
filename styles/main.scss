@@ -3,6 +3,7 @@
 @import 'spacings';
 @import 'typography';
 @import 'buttons';
+@import 'mixins';
 
 header {
     width: 1110px;
@@ -75,12 +76,13 @@ header {
     position: absolute;
     top: 225px;
     left: 165px;
-    color: $white;
+    
 
     p {
         &.overline {
             position: absolute;
             top: 0;
+            color: $white;
         }
 
         &.experience {
@@ -109,67 +111,71 @@ header {
 
 .part1 {
     height: 572px;
-
-    .container {
-        display: flex;
-        gap: 30px;
-
-        .box {
-            width: 350px;
-            height: 284px;
-            margin-top: 120px;
-            position: relative;
-
-            h6 {
-                position: absolute;
-                bottom: 63px;
-                left: 108.5px;
-                z-index: 1;
-                color: $black;
-            }
-
-            img {
-                width: 210px;
-                position: absolute;
-                left: 70px;
-                top: 24px;
-                z-index: 1;
-            }
-
-            button {
-                position: absolute;
-                z-index: 1;
-                left: 146px;
-                bottom: 30px;
-            }
-
-            .graybox {
-                background-color: $gray;
-                width: 350px;
-                height: 204px;
-                position: absolute;
-                top: 80px;
-                border-radius: 8px;
-            }
-        }
-
-        .box2 {
-            h6 {
-                left: 124.5px;
-            }
-        }
-
-        .box3 {
-            img {
-                width: 210px;
-                height: 190px;
-            }
-
-            h6 {
-                left: 116px;
-            }
-        }
+    @include productsbar;
+    .box{
+        margin-top: 120px;
     }
+
+    // .productsbar {
+    //     display: flex;
+    //     gap: 30px;
+
+    //     .box {
+    //         width: 350px;
+    //         height: 284px;
+    //         margin-top: 120px;
+    //         position: relative;
+
+    //         h6 {
+    //             position: absolute;
+    //             bottom: 63px;
+    //             left: 108.5px;
+    //             z-index: 1;
+    //             color: $black;
+    //         }
+
+    //         img {
+    //             width: 210px;
+    //             position: absolute;
+    //             left: 70px;
+    //             top: 24px;
+    //             z-index: 1;
+    //         }
+
+    //         button {
+    //             position: absolute;
+    //             z-index: 1;
+    //             left: 146px;
+    //             bottom: 30px;
+    //         }
+
+    //         .graybox {
+    //             background-color: $gray;
+    //             width: 350px;
+    //             height: 204px;
+    //             position: absolute;
+    //             top: 80px;
+    //             border-radius: 8px;
+    //         }
+    //     }
+
+    //     .box2 {
+    //         h6 {
+    //             left: 124.5px;
+    //         }
+    //     }
+
+    //     .box3 {
+    //         img {
+    //             width: 210px;
+    //             height: 190px;
+    //         }
+
+    //         h6 {
+    //             left: 116px;
+    //         }
+    //     }
+    // }
 }
 
 .part2 {
@@ -304,7 +310,7 @@ header {
         .text {
             width: 445px;
             height: 295px;
-            margin-top:147px;
+            align-self: center;
             h2 {
                 color: $black;
             }
@@ -350,7 +356,6 @@ header {
             }
         }
     }
-
     .footertext {
         width: 540px;
         height: 181px;

@@ -3,6 +3,7 @@
 @import 'spacings';
 @import 'typography';
 @import 'buttons';
+@import 'mixins';
 
 header{
     width:1110px;
@@ -54,18 +55,107 @@ header{
     }
 }
 
-
 .headerpart {
     background-color:$black;
     background-position: center;
     width: 1440px;
-    height: 336px;   
+    height: 336px;  
+    
     h2{
-       position: absolute;
     //    background-color: red;
-       bottom:97px;
-       right:578px;
        width: 283px;
        height: 44px;
+       margin:0 auto;
+       margin-top:98px;
+
     }
 }
+
+.headphonetypes{
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap:160px;
+    }
+    article{
+        width:1110px;
+        display: flex;
+        gap:125px;
+        img{
+            width:540px;
+            height: 560px;
+            border-radius: 8px;
+        }
+        h2{
+            color:$black;
+        }
+    }
+    .product1{
+        // height: 560px;
+        // background-color: pink;
+        margin-top: 160px;
+        .description {
+            align-self: center;
+            width: 445px;
+            .overline{
+                margin-bottom:16px;
+            }
+            h2{
+                margin-bottom: 32px;
+            }
+            p{
+                opacity: 1;
+                &:nth-of-type(2){
+                    margin-bottom:40px;
+                    opacity: 0.5;
+
+                }
+                
+            }
+        }
+    }
+    .product2and3{
+        .description{
+            align-self: center;
+            width: 445px;
+            h2{
+              margin-bottom:32px;
+              height: 88px;
+            }
+            p{
+                opacity:0.5;
+                margin-bottom:40px;
+            }
+        }
+    }
+    
+    .about{
+        height: 588px;
+        display: flex;
+        gap:125px;
+        margin-bottom: 160px;
+        img {
+            border-radius: 8px;
+            height: 588px;
+        }
+        .text {
+            width: 445px;
+            height: 295px;
+            align-self: center;
+            h2 {
+                color: $black;
+            }
+            p {
+                margin-top:32px;
+                opacity: 50%;
+                color: $black;
+            }
+        }
+        .span {
+            color: $orange;
+        }
+    }
+    @include productsbar;
+}
+
+@include footerstyle;
