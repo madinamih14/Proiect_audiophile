@@ -15,6 +15,9 @@ button{
     background-color:$orange;
     border:none;
     color:$white;
+    &:hover{
+        background-color:$corai;
+    }
     
 }
 
@@ -25,7 +28,7 @@ button{
     color:$black;
     background:none;
     background-image: url('../assets/shared/desktop/icon-arrow-right.svg');
-    background-position:right;
+    background-position:center right;
     background-repeat: no-repeat;
     background-size:8px 10px;
     p{
@@ -34,16 +37,27 @@ button{
         height: 18px;
         font-weight: 700;
         line-height: 17.76px;
+        &:hover{
+            color:$orange;
+            opacity: 1;
+        }
     }
 }
 
 .button2hover{
     background-color:$black;
     color:$white;
+    &:hover{
+        background-color: $darkgray;
+    }
 }
 
 .button2default{
     background:none;
     border:1px solid $black;
+    &:hover{
+        background-color: $black;
+        color:white;
+    }
     // line-height: 17.76px;
 }

@@ -24,6 +24,23 @@ img {
   height: 100%;
 }
 
+a {
+  color: inherit;
+  opacity: 1;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -62,8 +79,9 @@ h4 {
 
 h5 {
   font-size: 24px;
-  line-height: 33px;
-  letter-spacing: 1.7px;
+  line-height: 32.78px;
+  letter-spacing: 1.71px;
+  font-weight: 700;
 }
 
 h6 {
@@ -133,6 +151,23 @@ img {
   height: 100%;
 }
 
+a {
+  color: inherit;
+  opacity: 1;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -171,8 +206,9 @@ h4 {
 
 h5 {
   font-size: 24px;
-  line-height: 33px;
-  letter-spacing: 1.7px;
+  line-height: 32.78px;
+  letter-spacing: 1.71px;
+  font-weight: 700;
 }
 
 h6 {
@@ -230,6 +266,9 @@ button {
   border: none;
   color: #FFFFFF;
 }
+.button1:hover {
+  background-color: #FBAF85;
+}
 
 .button3 {
   width: 57.32px;
@@ -238,7 +277,7 @@ button {
   color: #000000;
   background: none;
   background-image: url("../assets/shared/desktop/icon-arrow-right.svg");
-  background-position: right;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: 8px 10px;
 }
@@ -249,15 +288,26 @@ button {
   font-weight: 700;
   line-height: 17.76px;
 }
+.button3 p:hover {
+  color: #D87D4A;
+  opacity: 1;
+}
 
 .button2hover {
   background-color: #000000;
   color: #FFFFFF;
 }
+.button2hover:hover {
+  background-color: #4C4C4C;
+}
 
 .button2default {
   background: none;
   border: 1px solid #000000;
+}
+.button2default:hover {
+  background-color: #000000;
+  color: white;
 }
 
 header {
@@ -279,6 +329,9 @@ header ul {
 header ul li {
   display: inline;
   margin: 0;
+}
+header ul li:active {
+  color: #D87D4A;
 }
 header ul li:not(:last-of-type) {
   margin-right: 34px;
@@ -334,6 +387,7 @@ header button:nth-of-type(3) {
   position: absolute;
   top: 183px;
   right: 49px;
+  color: #FFFFFF;
 }
 .newproduct h1 {
   position: absolute;
@@ -359,6 +413,13 @@ header button:nth-of-type(3) {
   width: 350px;
   height: 284px;
   position: relative;
+}
+.part1 .productsbar .box:hover {
+  cursor: pointer;
+}
+.part1 .productsbar .box:hover p {
+  color: #D87D4A;
+  opacity: 1;
 }
 .part1 .productsbar .box h6 {
   position: absolute;
@@ -561,6 +622,9 @@ header button:nth-of-type(3) {
 .footer footer nav ul li:not(:last-of-type) {
   margin-right: 34px;
 }
+.footer footer nav ul li:active {
+  color: #D87D4A;
+}
 .footer .footertext {
   width: 540px;
   height: 181px;
@@ -580,9 +644,15 @@ header button:nth-of-type(3) {
   bottom: 136px;
   right: 165px;
 }
+.footer .footerbuttons img:hover {
+  color: #D87D4A;
+}
 .footer .footerbuttons button {
   width: 24px;
   background: none;
+}
+.footer .footerbuttons button:hover.svgicons path {
+  fill: #D87D4A;
 }
 .footer .footerbuttons button:not(:last-of-type) {
   margin-right: 16px;

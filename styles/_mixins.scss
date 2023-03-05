@@ -10,6 +10,15 @@
             height: 284px;
             position: relative;
 
+            &:hover {
+                p {
+                    color: $orange;
+                    opacity: 1;
+                }
+
+                cursor: pointer;
+            }
+
             h6 {
                 position: absolute;
                 bottom: 63px;
@@ -67,63 +76,128 @@
         width: 100%;
         height: 365px;
         background-color: $warmblack;
+
         .orangeline {
             width: 101px;
             height: 4px;
             background-color: $orange;
         }
-    
+
         footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-top: 71px;
+
             nav {
                 ul {
                     list-style: none;
                     display: flex;
-    
+
                     li {
                         display: inline;
-    
+
                         &:not(:last-of-type) {
                             margin-right: 34px;
+                        }
+
+                        &:active {
+                            color: $orange;
                         }
                     }
                 }
             }
         }
+
         .footertext {
             width: 540px;
             height: 181px;
+
             p {
-                margin-top:36px;
+                margin-top: 36px;
                 opacity: 50%;
                 color: $white;
-    
+
                 &:nth-of-type(2) {
-                    margin-top:56px;
+                    margin-top: 56px;
                     font-weight: 700;
                 }
             }
         }
-    
+
         .footerbuttons {
             display: flex;
             position: absolute;
             bottom: 136px;
             right: 165px;
-    
+
             button {
                 width: 24px;
                 // height: 24px;
                 background: none;
-    
+
+                &:hover {
+                    &.svgicons path {
+                        fill: $orange;
+                    }
+                }
+
                 &:not(:last-of-type) {
                     margin-right: 16px;
                 }
             }
-    
+
         }
     }
+}
+
+@mixin gallerystyle {
+    .gallery {
+        display: grid;
+        grid-template-columns: 445px 635px;
+        grid-template-rows: 280px 280px;
+        row-gap: 32px;
+        column-gap: 30px;
+
+        img {
+            border-radius: 8px;
+
+            &:first-of-type {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            &:nth-of-type(2) {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            &:nth-of-type(3) {
+                grid-column: 2/3;
+                grid-row: 1/3;
+            }
+        }
+    }
+}
+
+@mixin alsolike {
+    .alsolike {
+        background-color: red;
+
+        .cards {
+            display: flex;
+            gap: 30px;
+
+            img {
+                width: 350px;
+                height: 318px;
+                border-radius: 8px;
+            }
+        }
+        h3{
+            margin-bottom:64px;
+            text-align: center;
+        }
+    }
+
 }

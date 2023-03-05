@@ -24,6 +24,23 @@ img {
   height: 100%;
 }
 
+a {
+  color: inherit;
+  opacity: 1;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -62,8 +79,9 @@ h4 {
 
 h5 {
   font-size: 24px;
-  line-height: 33px;
-  letter-spacing: 1.7px;
+  line-height: 32.78px;
+  letter-spacing: 1.71px;
+  font-weight: 700;
 }
 
 h6 {
@@ -133,6 +151,23 @@ img {
   height: 100%;
 }
 
+a {
+  color: inherit;
+  opacity: 1;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -171,8 +206,9 @@ h4 {
 
 h5 {
   font-size: 24px;
-  line-height: 33px;
-  letter-spacing: 1.7px;
+  line-height: 32.78px;
+  letter-spacing: 1.71px;
+  font-weight: 700;
 }
 
 h6 {
@@ -230,6 +266,9 @@ button {
   border: none;
   color: #FFFFFF;
 }
+.button1:hover {
+  background-color: #FBAF85;
+}
 
 .button3 {
   width: 57.32px;
@@ -238,7 +277,7 @@ button {
   color: #000000;
   background: none;
   background-image: url("../assets/shared/desktop/icon-arrow-right.svg");
-  background-position: right;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: 8px 10px;
 }
@@ -249,15 +288,26 @@ button {
   font-weight: 700;
   line-height: 17.76px;
 }
+.button3 p:hover {
+  color: #D87D4A;
+  opacity: 1;
+}
 
 .button2hover {
   background-color: #000000;
   color: #FFFFFF;
 }
+.button2hover:hover {
+  background-color: #4C4C4C;
+}
 
 .button2default {
   background: none;
   border: 1px solid #000000;
+}
+.button2default:hover {
+  background-color: #000000;
+  color: white;
 }
 
 header {
@@ -280,6 +330,9 @@ header ul {
 header ul li {
   display: inline;
   margin: 0;
+}
+header ul li:active {
+  color: #D87D4A;
 }
 header ul li:not(:last-of-type) {
   margin-right: 34px;
@@ -316,9 +369,8 @@ header button:nth-of-type(3) {
   height: 336px;
 }
 .headerpart h2 {
-  width: 283px;
+  text-align: center;
   height: 44px;
-  margin: 0 auto;
   margin-top: 98px;
 }
 
@@ -359,6 +411,15 @@ header button:nth-of-type(3) {
 .headphonetypes .product1 .description p:nth-of-type(2) {
   margin-bottom: 40px;
   opacity: 0.5;
+}
+.headphonetypes .product1 .description p.textarea {
+  margin-bottom: 32px;
+}
+.headphonetypes .product1 .description p.price {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1.29px;
+  margin-bottom: 47px;
 }
 .headphonetypes .product2and3 .description {
   align-self: center;
@@ -406,6 +467,13 @@ header button:nth-of-type(3) {
   width: 350px;
   height: 284px;
   position: relative;
+}
+.headphonetypes .productsbar .box:hover {
+  cursor: pointer;
+}
+.headphonetypes .productsbar .box:hover p {
+  color: #D87D4A;
+  opacity: 1;
 }
 .headphonetypes .productsbar .box h6 {
   position: absolute;
@@ -472,6 +540,9 @@ header button:nth-of-type(3) {
 .footer footer nav ul li:not(:last-of-type) {
   margin-right: 34px;
 }
+.footer footer nav ul li:active {
+  color: #D87D4A;
+}
 .footer .footertext {
   width: 540px;
   height: 181px;
@@ -495,6 +566,99 @@ header button:nth-of-type(3) {
   width: 24px;
   background: none;
 }
+.footer .footerbuttons button:hover.svgicons path {
+  fill: #D87D4A;
+}
 .footer .footerbuttons button:not(:last-of-type) {
   margin-right: 16px;
+}
+
+.productdetail {
+  height: 97px;
+}
+.productdetail header {
+  border: 0;
+  padding-bottom: 37px;
+}
+
+.back {
+  background: none;
+  margin-top: 79px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.back:hover {
+  opacity: 1;
+  color: #D87D4A;
+}
+
+button.inline {
+  margin-left: 16px;
+}
+
+form {
+  display: inline;
+}
+
+.headphonetypes .features h3 {
+  margin-bottom: 32px;
+}
+.headphonetypes .features .text {
+  width: 635px;
+}
+.headphonetypes .features .text p {
+  opacity: 0.5;
+}
+.headphonetypes .features .inthebox li {
+  color: rgba(0, 0, 0, 0.5);
+  list-style: none;
+}
+.headphonetypes .features .inthebox li::before {
+  opacity: 1;
+  content: "2x";
+  color: #D87D4A;
+  margin-right: 24px;
+  font-weight: 700;
+}
+.headphonetypes .features .inthebox li:not(:nth-of-type(2))::before {
+  content: "1x";
+}
+.headphonetypes .gallery {
+  display: grid;
+  grid-template-columns: 445px 635px;
+  grid-template-rows: 280px 280px;
+  row-gap: 32px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.headphonetypes .gallery img {
+  border-radius: 8px;
+}
+.headphonetypes .gallery img:first-of-type {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.headphonetypes .gallery img:nth-of-type(2) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.headphonetypes .gallery img:nth-of-type(3) {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.headphonetypes .alsolike {
+  background-color: red;
+}
+.headphonetypes .alsolike .cards {
+  display: flex;
+  gap: 30px;
+}
+.headphonetypes .alsolike .cards img {
+  width: 350px;
+  height: 318px;
+  border-radius: 8px;
+}
+.headphonetypes .alsolike h3 {
+  margin-bottom: 64px;
+  text-align: center;
 }/*# sourceMappingURL=categories.css.map */
