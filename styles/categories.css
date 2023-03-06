@@ -331,7 +331,7 @@ header ul li {
   display: inline;
   margin: 0;
 }
-header ul li:active {
+header ul li:hover {
   color: #D87D4A;
 }
 header ul li:not(:last-of-type) {
@@ -351,8 +351,7 @@ header button {
   cursor: pointer;
 }
 header button:first-of-type {
-  width: 21px;
-  height: 20px;
+  width: 20px;
 }
 header button:nth-of-type(2) {
   width: 23px;
@@ -360,6 +359,10 @@ header button:nth-of-type(2) {
 }
 header button:nth-of-type(3) {
   width: 20px;
+}
+header button img:hover {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #D87D4A;
 }
 
 .headerpart {
@@ -408,12 +411,9 @@ header button:nth-of-type(3) {
 .headphonetypes .product1 .description p {
   opacity: 1;
 }
-.headphonetypes .product1 .description p:nth-of-type(2) {
-  margin-bottom: 40px;
-  opacity: 0.5;
-}
 .headphonetypes .product1 .description p.textarea {
   margin-bottom: 32px;
+  opacity: 0.5;
 }
 .headphonetypes .product1 .description p.price {
   font-weight: 700;
@@ -540,7 +540,7 @@ header button:nth-of-type(3) {
 .footer footer nav ul li:not(:last-of-type) {
   margin-right: 34px;
 }
-.footer footer nav ul li:active {
+.footer footer nav ul li:hover {
   color: #D87D4A;
 }
 .footer .footertext {
@@ -610,18 +610,54 @@ form {
   opacity: 0.5;
 }
 .headphonetypes .features .inthebox li {
+  margin-bottom: 8px;
   color: rgba(0, 0, 0, 0.5);
   list-style: none;
 }
 .headphonetypes .features .inthebox li::before {
+  display: inline-block;
+  width: 18px;
+  margin-right: 21px;
   opacity: 1;
   content: "2x";
   color: #D87D4A;
-  margin-right: 24px;
   font-weight: 700;
 }
 .headphonetypes .features .inthebox li:not(:nth-of-type(2))::before {
   content: "1x";
+}
+.headphonetypes .features .inthebox.speaker li {
+  margin-bottom: 8px;
+}
+.headphonetypes .features .inthebox.speaker li::before {
+  display: inline-block;
+  width: 18px;
+  margin-right: 21px;
+  opacity: 1;
+  content: "2x";
+  color: #D87D4A;
+  font-weight: 700;
+}
+.headphonetypes .features .inthebox.speaker li:not(:first-of-type):not(:nth-of-type(2))::before {
+  content: "1x";
+}
+.headphonetypes .features .inthebox.earphones li {
+  margin-bottom: 8px;
+}
+.headphonetypes .features .inthebox.earphones li::before {
+  display: inline-block;
+  width: 18px;
+  margin-right: 21px;
+  opacity: 1;
+  content: "1x";
+  color: #D87D4A;
+  font-weight: 700;
+}
+.headphonetypes .features .inthebox.earphones li:first-of-type::before {
+  content: "2x";
+}
+.headphonetypes .features .inthebox.earphones li:nth-of-type(2)::before {
+  content: "6x";
 }
 .headphonetypes .gallery {
   display: grid;
@@ -646,9 +682,6 @@ form {
   grid-column: 2/3;
   grid-row: 1/3;
 }
-.headphonetypes .alsolike {
-  background-color: red;
-}
 .headphonetypes .alsolike .cards {
   display: flex;
   gap: 30px;
@@ -657,6 +690,15 @@ form {
   width: 350px;
   height: 318px;
   border-radius: 8px;
+}
+.headphonetypes .alsolike .cards div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headphonetypes .alsolike .cards h5 {
+  margin-top: 40px;
+  margin-bottom: 32px;
 }
 .headphonetypes .alsolike h3 {
   margin-bottom: 64px;
