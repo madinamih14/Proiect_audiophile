@@ -5,6 +5,11 @@
 @import 'buttons';
 @import 'mixins';
 
+//adaug ceva test mai jos cu backgroundcolor red
+header{
+    background-color: red;
+    //asta e testul
+}
 header {
     width: 1110px;
     display: flex;
